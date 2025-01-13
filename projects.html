@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<link rel="stylesheet" href="./projects.css">
+
+<body>
+    <div class="navbar">
+        <div class="company_name">
+            <img src="./images/Civil_Arcade_Logo-outline.png" alt="" width="80px" height="80px">
+            <h2>Civil <span>Arcade</span></h2>
+        </div>
+        <div class="factors">
+            <a href="./index.html">Home</a>
+            <a href="./company.html">Company</a>
+            <a href="./projects.html" class="active">Projects</a>
+            <a href="./career.html">Careers</a>
+            <a href="./resource.html">Resources</a>
+        </div>
+    </div>
+
+    <div>
+        <h1>Application Submissions</h1>
+        <button type="button" onclick="formFill()">Submit Form</button>
+        <div class="formPopup" id="formPopup" style="align-items: center; justify-content: center;">
+            <form id="applicationForm" class="styled-form" style="max-height: 80vh; overflow: auto; min-width: 400px;">
+                <label for="application-type">Application Type :</label>
+                <select name="application_type" id="application-type" required>
+                    <option value="">Select type</option>
+                    <option value="experienced">Experienced</option>
+                    <option value="fresher">Fresher</option>
+                </select>
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" required>
+                <label for="phone-number">Phone Number :</label>
+                <input type="number" name="phone" id="phone-number" required>
+                <label for="whatsapp-number">Phone Number (Whatsapp) :</label>
+                <input type="number" name="whatsapp" id="whatsapp-number" required>
+                <label for="address">Address of Communication :</label>
+                <input type="text" name="address" id="address" required>
+                <label for="date">Date of Requirements :</label>
+                <input type="date" name="date" id="date" required>
+                <label for="comments">Comments & Other Details :</label>
+                <textarea name="message" id="comments" required></textarea>
+                <input onclick="sendMail()" id="sub" type="submit" value="Submit">
+            </form>
+            <p id="applicationNumber" style="display: none; font-weight: bold; margin-top: 20px;"></p>
+
+        </div>
+
+
+
+    </div>
+
+    <div>
+        <h1>Requests & Track Project Progress</h1>
+        <button>Request Estimate/Quote</button>
+        <button>Track Progress </button>
+
+
+
+
+
+
+
+        <button type="button" onclick="tracking()">Request Callback</button>
+
+        <div class="formPopup2" id="formPopup2" style="align-items: center; justify-content: center;">
+            <form action="" method="post" class="styled-form"
+                style="max-height: 80vh; overflow: auto; min-width: 400px;">
+                <label for="application-type">Enquiry Type :</label>
+                <select name="application_type" id="enquiry-type" required>
+                    <option value="">Select type</option>
+                    <option value="experienced">Experienced</option>
+                    <option value="fresher">Fresher</option>
+                </select>
+
+                <label for="phone-number">Phone Number :</label>
+                <input type="number" name="phone" id="phone-number2" required>
+                <label for="whatsapp-number">Phone Number (Whatsapp) :</label>
+                <input type="number" name="whatsapp" id="whatsapp-number2" required>
+                <label for="address">Remarks :</label>
+                <input type="text" name="remarks" id="remarks" required>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <h4> Contact Us</h4>
+            <br>
+            <div class="data">
+                <div>
+                    <!-- <a href=""><u>ADDRESS</u></a> -->
+                    <img src="./images/add1.png" width="30px">
+                    <p>Painuthara Tower, 5th Floor, S.A.Road, <br>Metro Pillar 847, Vytttila P.O, Ernakulam <br>PIN 68
+                        2019</p>
+                </div>
+                <div>
+                    <!-- <a href=""><u>CALL US</u></a> -->
+                    <img src="./images/contact-mail.png" width="30px">
+                    <div class="number">
+                        <p>+91 9447001171 </p>
+                        <p>+91 6238279483</p>
+
+                    </div>
+                </div>
+                <div>
+                    <!-- <a href=""><u>EMAIL US</u></a> -->
+                    <img src="./images/email.png" width="30px">
+                    <div class="mail">
+                        civilarcade@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./projects.js"></script>
+</body>
+
+</html>

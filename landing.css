@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+    color: black;
+}
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     border: 1px, solid, rgb(18, 67, 122) ;
+}
+.factors {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.company_name{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.company_name h2 {
+    color: rgb(18, 67, 122);
+    font-size: 50px;
+}
+.factors a {
+    color: #413f3fdc;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+.factors a:hover, .factors a.active {
+    color: black;
+}
+.slider{
+    overflow: hidden;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+.slider figure img{
+    float: left;
+    width: 20%;
+    height: 500px;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    90%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+h1{
+    font-size: 40px;
+    color: rgb(18, 67, 122);
+padding: 30px;
+margin-left: 15px;
+text-align: center;
+}
+.collections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+    margin-left: 15px;
+}
+
+.clts1 img {
+    width: 220px;
+    height: 210px;
+    margin: 3px 0;
+    border-radius: 8px;
+}
+
+
+.collections .clts1 {
+    border-radius: 8px;
+    width: 250px;
+    padding: 5px 0;
+    margin: 5px 0;
+    background-color:  rgba(60, 130, 210, 0.53);
+    text-align: center;
+}
+
+.collections .clts1 h5 {
+    color: rgb(23, 12, 12);
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+.collections .clts1 button {
+    font-size: 17px;
+    color: rgb(76, 48, 48)
+}
+
+.collections .clts1 button:hover {
+    color: rgb(18, 67, 122);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: rgba(159, 157, 157, 0.263);
+    border-radius: 3px;
+    padding: 6px;
+}
+
+.footer h4 {
+    color:rgb(18, 67, 122);
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.data a {
+    text-decoration: none;
+    color: rgb(18, 67, 122);
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail {
+    margin-right: 20px;
+}
