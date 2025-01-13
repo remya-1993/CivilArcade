@@ -121,3 +121,53 @@ span {
 .mail {
     margin-right: 20px;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .navbar {
+        width: 100%;
+        max-width: 990px;
+        align-items: center;
+    }
+
+    .navbar .factors {
+        display: none;
+    }
+    .company_name img {
+        width: 50px;
+
+    }
+
+    .company_name h2 {
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 20px;
+       
+        text-align: center;
+    }
+    h5,h3, h6{
+        text-align: center;
+    }
+    .footer h4 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .data {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .data p,
+    img {
+        margin: 5px;
+    }
+
+
+}
