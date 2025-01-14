@@ -8,12 +8,6 @@ body {
     color: black;
 }
 
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 40px;
-} */
-
 .navbar {
     display: flex;
     align-items: center;
@@ -25,6 +19,23 @@ body {
     display: flex;
     align-items: center;
     gap: 25px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+
+    color: #1d0a0a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    gap: 40px;
+}
+.factors .icon {
+    display: none;
 }
 
 .company_name {
@@ -50,6 +61,7 @@ body {
 .factors a.active {
     color: black;
 }
+
 
 .slider {
     overflow: hidden;
@@ -200,9 +212,56 @@ h1 {
         align-items: center;
     }
 
-    .navbar .factors {
+    .factors .menu {
         display: none;
     }
+    .factors .responsive {
+        display: flex;
+        text-align: right;
+    }
+    .factors .icon {
+        display: block;
+    }
+    
+    .factors.responsive .menu {
+        display: block;
+        text-align: center;
+        position: absolute;
+        /* padding: 5px; */
+        background-color: #fff;
+        border-radius: 4px;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+        gap: 20px;
+    }
+    
+    .factors.responsive .menu a {
+        display: block;
+        color: #000;
+        font-size: 10px;
+    }
+    .factors.responsive {
+        display: block;
+        text-align: left;
+        position: absolute;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 4px;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+    }
+    
+    /* .factors.responsive a {
+        display: block;
+        color: #171616;
+        font-size: 20px;
+        padding: 15px;
+    
+    } */
+    
+
     .slider {
         height: 300px; 
     }
@@ -229,6 +288,24 @@ h1 {
         }
     }
 
+    .collections .clts1 {
+        width: 100%;
+        /* padding: 20px; */
+        right: 0;
+        left: 0;
+    }
+
+    .clts1 img {
+        width: 290px;
+        border-radius: 8px;
+        height: 300px;
+    }
+    .collections .clts1 button{
+        font-size: 13px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 0;
+    }
 
     .company_name img {
         width: 50px;

@@ -1,3 +1,16 @@
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "factors") {
+    x.className += " responsive";
+  } else {
+    x.className = "factors";
+  }
+}
+
+
+
+
+
 let formPopup = document.getElementById("formPopup");
 function formFill() {
   formPopup.classList.add("formOpen-popup");
