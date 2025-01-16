@@ -24,12 +24,15 @@ function tracking() {
 
 $("#applicationForm").submit((e) => {
   e.preventDefault()
+
+  const applicationNumber = "APP" + Math.floor(100000 + Math.random() * 900000)
+
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycbxmiNFoZqhmWjyeTmOzxTNtyBam8TpdDpz0vqurcE4rnDjPXxUVWIhq44UGiMO263kDTg/exec",
     data: $("#applicationForm").serialize(),
     method: "post",
     success: function (response) {
-      alert("Your Application had been submitted successfully")
+      alert(`Your Application has been submitted successfully.\nYour Application Number is: ${applicationNumber}`);
       window.location.reload()
       //window.location.href="https://google.com"
     },
