@@ -212,13 +212,10 @@ h1 {
         align-items: center;
     }
 
-    .factors .menu {
+   .menu {
         display: none;
     }
-    .factors .responsive {
-        display: flex;
-        text-align: right;
-    }
+ 
     .factors .icon {
         display: block;
     }
@@ -252,14 +249,6 @@ h1 {
         right: 0;
         z-index: 1;
     }
-    
-    /* .factors.responsive a {
-        display: block;
-        color: #171616;
-        font-size: 20px;
-        padding: 15px;
-    
-    } */
     
 
     .slider {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <link rel="stylesheet" href="./projects.css">
 
@@ -27,7 +28,7 @@
         <h1>Application Submissions</h1>
         <button type="button" onclick="formFill()">Submit Form</button>
         <div class="formPopup" id="formPopup" style="align-items: center; justify-content: center;">
-            <form id="applicationForm" class="styled-form" style="max-height: 80vh; overflow: auto; min-width: 400px;">
+            <form id="applicationForm" action="" class="styled-form" style="max-height: 80vh; overflow: auto; min-width: 400px;">
                 <label for="application-type">Application Type :</label>
                 <select name="application_type" id="application-type" required>
                     <option value="">Select type</option>
@@ -46,7 +47,7 @@
                 <input type="date" name="date" id="date" required>
                 <label for="comments">Comments & Other Details :</label>
                 <textarea name="message" id="comments" required></textarea>
-                <input onclick="sendMail()" id="sub" type="submit" value="Submit">
+                <input id="sub" type="submit" value="Submit">
             </form>
             <p id="applicationNumber" style="display: none; font-weight: bold; margin-top: 20px;"></p>
 
