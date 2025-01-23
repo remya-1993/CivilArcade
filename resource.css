@@ -81,7 +81,10 @@ body {
         text-align: center;
         font-size: 20px;
     }
-
+    h2 {
+       
+        font-size: 16px;
+    }
     .data {
         max-width: 100%;
         display: flex;

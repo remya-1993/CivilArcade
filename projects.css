@@ -52,9 +52,8 @@ body {
 
 
 .btn {
-    width: 25%;
+    width: 20%;
     border: 1px solid rgb(105, 137, 171);
-    ;
     border-radius: 5px;
     background-color: rgb(105, 137, 171);
     cursor: pointer;
