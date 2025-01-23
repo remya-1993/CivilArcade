@@ -8,106 +8,74 @@ body {
     color: black;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px, solid, rgb(18, 67, 122);
+.logo_size {
+    width: 80px;
+    height: 72px;
 }
 
-.factors {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+.font-12 {
+    font-size: 12px;
 }
 
-.company_name {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
+.font-14 {
+    font-size: 14px;
 }
 
-.company_name h2 {
-    color: rgb(18, 67, 122);
-    font-size: 50px;
-}
-
-.factors a {
-    color: #413f3fdc;
-    font-weight: bold;
+.font-16 {
     font-size: 16px;
-    text-decoration: none;
 }
 
-.factors a:hover, .factors a.active {
-    color: black;
+.font-18 {
+    font-size: 18px;
 }
 
-h1 {
+.font-20 {
     font-size: 20px;
-    color: rgb(18, 67, 122);
-    padding: 20px;
-    margin-left: 45px;
-    font-weight: 200;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.heading {
+    color: rgb(22, 91, 169);
+}
+
+.container-fluid {
+    margin-top: 20px;
+}
+
+.common-head {
+    min-height: 80px;
 }
 
 .footer {
     margin-top: 100px;
     background-color: rgba(159, 157, 157, 0.263);
     border-radius: 3px;
-    padding: 6px;
 }
 
-.footer h4 {
-    color: rgb(18, 67, 122);
-    font-size: 2rem;
-    margin-left: 20px;
+.footer h2 {
+    color: rgb(22, 91, 169);
 }
-
 .data {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 20px;
 }
 
-.data a {
-    text-decoration: none;
-    color: rgb(18, 67, 122);
-}
 
-.info {
-    display: flex;
-    justify-content: space-between;
-}
 
-.mail {
-    margin-right: 20px;
-}
 
 @media only screen and (max-width: 767px) {
 
-    .navbar {
-        width: 100%;
-        max-width: 990px;
-        align-items: center;
+    .common-head {
+        min-height: 40px;
     }
 
-    .navbar .factors {
-        display: none;
-    }
-
-    .company_name img {
-        width: 50px;
-
-    }
-
-    .company_name h2 {
-        font-size: 35px;
-    }
-    h1{
-        text-align: center;
+    .logo_size {
+        width: 60px;
+        height: 60px;
     }
     .footer h4 {
         text-align: center;
@@ -126,6 +94,9 @@ h1 {
     .data p,
     img {
         margin: 5px;
+    }
+    .footer h2 {
+        text-align: center;
     }
 
 }
